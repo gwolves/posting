@@ -62,8 +62,8 @@ class RequestOptions(VerticalScroll):
     """
 
     BINDINGS = [
-        Binding("down,j", "screen.focus_next", "Next"),
-        Binding("up,k", "screen.focus_previous", "Previous"),
+        Binding("down,n", "screen.focus_next", "Next"),
+        Binding("up,e", "screen.focus_previous", "Previous"),
     ]
 
     def __init__(self):

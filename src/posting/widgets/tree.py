@@ -19,13 +19,13 @@ class PostingTree(Tree[T]):
     """
 
     BINDINGS = [
-        Binding("k", "cursor_up", "Cursor Up", show=False),
-        Binding("j", "cursor_down", "Cursor Down", show=False),
-        Binding("K", "cursor_up_parent", "Cursor Up Parent", show=False),
-        Binding("J", "cursor_down_parent", "Cursor Down Parent", show=False),
+        Binding("e", "cursor_up", "Cursor Up", show=False),
+        Binding("n", "cursor_down", "Cursor Down", show=False),
+        Binding("E", "cursor_up_parent", "Cursor Up Parent", show=False),
+        Binding("N", "cursor_down_parent", "Cursor Down Parent", show=False),
         Binding("g", "scroll_home", "Cursor To Top", show=False),
         Binding("G", "scroll_end", "Cursor To Bottom", show=False),
-        Binding("enter,l,h", "select_cursor", "Select Cursor", show=False),
+        Binding("enter,m,i", "select_cursor", "Select Cursor", show=False),
         Binding("space,r", "toggle_node", "Toggle Expand", show=False),
     ]
 

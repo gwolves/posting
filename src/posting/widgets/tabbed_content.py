@@ -4,10 +4,10 @@ from textual.widgets import TabbedContent, Tabs
 
 class PostingTabbedContent(TabbedContent):
     BINDINGS = [
-        Binding("l", "next_tab", "Next tab", show=False),
-        Binding("h", "previous_tab", "Previous tab", show=False),
-        Binding("down,j", "app.focus_next", "Focus next", show=False),
-        Binding("up,k", "app.focus_previous", "Focus previous", show=False),
+        Binding("i", "next_tab", "Next tab", show=False),
+        Binding("m", "previous_tab", "Previous tab", show=False),
+        Binding("down,n", "app.focus_next", "Focus next", show=False),
+        Binding("up,e", "app.focus_previous", "Focus previous", show=False),
     ]
 
     def action_next_tab(self) -> None:

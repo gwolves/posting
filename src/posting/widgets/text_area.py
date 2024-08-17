@@ -13,7 +13,7 @@ from textual.reactive import reactive, Reactive
 from textual.widgets import TextArea, Label, Select, Checkbox
 from textual.widgets.text_area import Selection, TextAreaTheme
 from posting.config import SETTINGS
-from posting.themes import SyntaxTheme, Theme
+from posting.themes import Theme
 
 from posting.widgets.select import PostingSelect
 
@@ -320,22 +320,22 @@ class ReadOnlyTextArea(PostingTextArea):
     """
 
     BINDINGS = [
-        Binding("up,k", "cursor_up", "Cursor Up", show=False),
-        Binding("down,j", "cursor_down", "Cursor Down", show=False),
-        Binding("right,l", "cursor_right", "Cursor Right", show=False),
-        Binding("left,h", "cursor_left", "Cursor Left", show=False),
-        Binding("shift+up,K", "cursor_up(True)", "cursor up select", show=False),
-        Binding("shift+down,J", "cursor_down(True)", "cursor down select", show=False),
-        Binding("shift+left,H", "cursor_left(True)", "cursor left select", show=False),
+        Binding("up,e", "cursor_up", "Cursor Up", show=False),
+        Binding("down,n", "cursor_down", "Cursor Down", show=False),
+        Binding("right,i", "cursor_right", "Cursor Right", show=False),
+        Binding("left,m", "cursor_left", "Cursor Left", show=False),
+        Binding("shift+up,E", "cursor_up(True)", "cursor up select", show=False),
+        Binding("shift+down,N", "cursor_down(True)", "cursor down select", show=False),
+        Binding("shift+left,M", "cursor_left(True)", "cursor left select", show=False),
         Binding(
-            "shift+right,L", "cursor_right(True)", "cursor right select", show=False
+            "shift+right,I", "cursor_right(True)", "cursor right select", show=False
         ),
         Binding("ctrl+left,b", "cursor_word_left", "cursor word left", show=False),
         Binding("ctrl+right,w", "cursor_word_right", "cursor word right", show=False),
         Binding(
             "home,ctrl+a,0,^", "cursor_line_start", "cursor line start", show=False
         ),
-        Binding("end,ctrl+e,$", "cursor_line_end", "cursor line end", show=False),
+        Binding("end,ctrl+j,$", "cursor_line_end", "cursor line end", show=False),
         Binding("pageup,ctrl+b", "cursor_page_up", "cursor page up", show=False),
         Binding("pagedown,ctrl+f", "cursor_page_down", "cursor page down", show=False),
         Binding("ctrl+d", "cursor_half_page_down", "cursor half page down", show=False),

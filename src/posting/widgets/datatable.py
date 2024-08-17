@@ -19,10 +19,10 @@ PostingDataTable {
 """
 
     BINDINGS = [
-        Binding("up,k", "cursor_up", "Cursor Up", show=False),
-        Binding("down,j", "cursor_down", "Cursor Down", show=False),
-        Binding("right,l", "cursor_right", "Cursor Right", show=False),
-        Binding("left,h", "cursor_left", "Cursor Left", show=False),
+        Binding("up,e", "cursor_up", "Cursor Up", show=False),
+        Binding("down,n", "cursor_down", "Cursor Down", show=False),
+        Binding("right,i", "cursor_right", "Cursor Right", show=False),
+        Binding("left,m", "cursor_left", "Cursor Left", show=False),
         Binding("f", "toggle_fixed_columns", "Toggle Fixed Column", show=False),
         Binding("home", "scroll_home", "Home", show=False),
         Binding("end", "scroll_end", "End", show=False),

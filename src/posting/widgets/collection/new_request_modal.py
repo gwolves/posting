@@ -90,7 +90,7 @@ class NewRequestModal(ModalScreen[NewRequestData | None]):
     AUTO_FOCUS = "#title-input"
     BINDINGS = [
         Binding("escape", "close_screen", "Cancel"),
-        Binding("ctrl+n,alt+enter", "create_request", "Create"),
+        Binding("ctrl+k,alt+enter", "create_request", "Create"),
     ]
 
     def __init__(

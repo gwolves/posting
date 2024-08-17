@@ -3,7 +3,7 @@ from dataclasses import dataclass
 from functools import partial
 import os
 from pathlib import Path
-from typing import Any, Union
+from typing import Union
 from urllib.parse import urlparse
 from rich.style import Style
 from rich.text import Text, TextType
@@ -56,26 +56,26 @@ Sub-collections cannot be deleted from the UI yet.
 
     BINDINGS = [
         Binding(
-            "d",
+            "y",
             "duplicate_request",
             "Dupe",
             # tooltip="Duplicate the request under the cursor and show the 'New Request' modal to change the name/description.",
         ),
         Binding(
-            "D",
+            "Y",
             "quick_duplicate_request",
             "Quick Dupe",
             show=False,
             # tooltip="Duplicate the request and automatically assign a unique name.",
         ),
         Binding(
-            "backspace",
+            "d",
             "delete_request_with_confirmation",
             "Delete",
             # tooltip="Delete the request under the cursor.",
         ),
         Binding(
-            "shift+backspace",
+            "D",
             "delete_request",
             "Delete",
             show=False,

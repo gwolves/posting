@@ -109,12 +109,12 @@ class AppBody(Vertical):
 class MainScreen(Screen[None]):
     AUTO_FOCUS = None
     BINDINGS = [
-        Binding("ctrl+j", "send_request", "Send"),
+        Binding("shift+enter", "send_request", "Send"),
         Binding("ctrl+t", "change_method", "Method"),
         Binding("ctrl+l", "app.focus('url-input')", "Focus URL input", show=False),
         Binding("ctrl+s", "save_request", "Save"),
-        Binding("ctrl+n", "new_request", "New"),
-        Binding("ctrl+m", "toggle_maximized", "Expand section", show=False),
+        Binding("ctrl+k", "new_request", "New"),
+        Binding("ctrl+h", "toggle_maximized", "Expand section", show=False),
         Binding(
             "ctrl+h",
             "toggle_collection_browser",
@@ -585,7 +585,7 @@ class Posting(App[None], inherit_bindings=False):
             description="Quit",
             priority=True,
         ),
-        Binding("f1,ctrl+question_mark", "help", "Help"),
+        Binding("f1,ctrl+question_mark,question_mark", "help", "Help"),
         Binding("f8", "save_screenshot", "Save screenshot", show=False),
     ]
 
